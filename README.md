@@ -40,7 +40,7 @@ var Format = require('format-io');
 
 ```js
     var perm    = 'rwx rwx rwx',
-        permNum = Format.permissions.symbolic(perm);
+        permNum = Format.permissions.numeric(perm);
         //'00777'
 ```
 

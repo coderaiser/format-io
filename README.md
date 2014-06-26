@@ -9,7 +9,7 @@ Format could be used in browser or node.
 In browser:
 
 ```js
-<script src='lib/format.js'>
+<script src='lib/format.js'></script>
 ```
 
 In node:

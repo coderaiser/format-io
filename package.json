@@ -18,5 +18,5 @@
     "engines": {
         "node": ">=0.4.x"
     },
-    "main": "./lib/format.js"
+    "main": "lib/format.js"
 }

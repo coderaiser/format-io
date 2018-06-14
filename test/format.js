@@ -83,9 +83,9 @@ test('format: size: pb', (t) => {
 });
 
 test('format: permissions: symbolic', (t) => {
-    const perm = (16895).toString(8);
+    const perm = (16894).toString(8);
     const result = permissions.symbolic(perm);
-    const expected = 'rwx rwx rwx';
+    const expected = 'rwx rwx rw-';
     
     t.equal(result, expected, 'should equal');
     t.end();

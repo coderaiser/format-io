@@ -30,7 +30,9 @@
     "watch:test": "npm run watcher -- npm test",
     "watch:lint": "npm run watcher -- 'npm run lint'"
   },
-  "dependencies": {},
+  "dependencies": {
+    "currify": "^2.0.6"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=4"

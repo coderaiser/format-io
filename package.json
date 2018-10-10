@@ -39,9 +39,9 @@
   },
   "main": "lib/format.js",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.49",
-    "@babel/core": "^7.0.0-beta.49",
-    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "coveralls": "^3.0.1",
     "eslint": "^5.6.1",
     "eslint-plugin-node": "^7.0.1",

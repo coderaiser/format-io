@@ -14,16 +14,16 @@
     "permissions"
   ],
   "scripts": {
-    "wisdom": "npm run build",
-    "lint": "redrun lint:*",
-    "lint:lib": "eslint lib",
-    "lint:test": "eslint -c .eslintrc.test --no-eslintrc test",
-    "test": "tape 'test/**/*.js'",
-    "report": "nyc report --reporter=text-lcov | coveralls",
-    "coverage": "nyc npm test",
-    "watcher": "nodemon -w test -w lib --exec",
-    "watch:test": "npm run watcher -- npm test",
-    "watch:lint": "npm run watcher -- 'npm run lint'"
+    "wisdom": "madrun wisdom",
+    "fix:lint": "madrun fix:lint",
+    "lint": "madrun lint",
+    "lint:test": "madrun lint:test",
+    "test": "madrun test",
+    "report": "madrun report",
+    "coverage": "madrun coverage",
+    "watcher": "madrun watcher",
+    "watch:test": "madrun watch:test",
+    "watch:lint": "madrun watch:lint"
   },
   "dependencies": {
     "currify": "^4.0.0"
@@ -37,9 +37,12 @@
     "coveralls": "^3.0.1",
     "eslint": "^6.4.0",
     "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-putout": "^2.0.0",
+    "madrun": "^3.0.5",
     "mkdirp": "^0.5.1",
     "nodemon": "^1.17.5",
     "nyc": "^14.1.1",
-    "rimraf": "^2.6.2"
+    "putout": "^6.1.0",
+    "supertape": "^1.2.3"
   }
 }

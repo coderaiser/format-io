@@ -39,14 +39,6 @@ format.permissions.numeric(perm);
 '00777'
 ```
 
-## Environments
-
-In environments that not supports `es2015`, `format` can be used with:
-
-```js
-var format = require('format/legacy');
-```
-
 # License
 
 MIT

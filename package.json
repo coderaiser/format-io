@@ -35,7 +35,7 @@
   "main": "lib/format.js",
   "devDependencies": {
     "coveralls": "^3.0.1",
-    "eslint": "^5.6.1",
+    "eslint": "^6.4.0",
     "eslint-plugin-node": "^10.0.0",
     "mkdirp": "^0.5.1",
     "nodemon": "^1.17.5",

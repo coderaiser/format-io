@@ -1,6 +1,6 @@
 {
   "name": "format-io",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "Format size, permissions",
   "homepage": "http://github.com/coderaiser/format-io",
@@ -14,7 +14,6 @@
     "permissions"
   ],
   "scripts": {
-    "wisdom": "madrun wisdom",
     "fix:lint": "madrun fix:lint",
     "lint": "madrun lint",
     "lint:test": "madrun lint:test",

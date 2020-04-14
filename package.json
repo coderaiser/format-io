@@ -13,6 +13,12 @@
     "size",
     "permissions"
   ],
+  "nyc": {
+    "exclude": [
+      "test",
+      ".madrun.js"
+    ]
+  },
   "scripts": {
     "fix:lint": "madrun fix:lint",
     "lint": "madrun lint",

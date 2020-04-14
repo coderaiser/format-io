@@ -112,9 +112,17 @@ test('format: permissions: numeric: wrong format', (t) => {
     t.end();
 });
 
-test('format: permissions: numeric', (t) => {
-    const result = permissions.numeric('rwx rwx rwx');
-    const expected = '00777';
+test('format: permissions: numeric: r-- r-- r--', (t) => {
+    const result = permissions.numeric('r-- r-- r--');
+    const expected = '00444';
+    
+    t.equal(result, expected, 'should equal');
+    t.end();
+});
+
+test('format: permissions: numeric: --- --- ---', (t) => {
+    const result = permissions.numeric('--- --- ---');
+    const expected = '00000';
     
     t.equal(result, expected, 'should equal');
     t.end();

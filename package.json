@@ -40,7 +40,7 @@
   "main": "lib/format.js",
   "devDependencies": {
     "coveralls": "^3.0.1",
-    "eslint": "^6.4.0",
+    "eslint": "^7.14.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-putout": "^3.5.0",
     "madrun": "^5.4.5",

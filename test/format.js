@@ -1,5 +1,7 @@
 'use strict';
 
+const tryCatch = require('try-catch');
+
 const test = require('supertape');
 const {
     size,
@@ -8,7 +10,8 @@ const {
 } = require('..');
 
 test('format: addSlashToEnd: no path', (t) => {
-    t.throws(addSlashToEnd, /path could not be empty!/, 'should throw');
+    const [error] = tryCatch(addSlashToEnd);
+    t.equal(error.message, 'path could not be empty!', 'should throw');
     t.end();
 });
 
@@ -108,7 +111,8 @@ test('format: permissions: numeric', (t) => {
 });
 
 test('format: permissions: numeric: wrong format', (t) => {
-    t.throws(permissions.numeric, /permissions should be in format "xxx xxx xxx"/, 'should equal');
+    const [error] = tryCatch(permissions.numeric);
+    t.equal(error.message, 'permissions should be in format "xxx xxx xxx"', 'should equal');
     t.end();
 });
 

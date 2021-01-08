@@ -13,16 +13,11 @@
     "size",
     "permissions"
   ],
-  "nyc": {
-    "exclude": [
-      "test",
-      ".madrun.js"
-    ]
-  },
   "scripts": {
     "fix:lint": "madrun fix:lint",
     "lint": "madrun lint",
-    "lint:test": "madrun lint:test",
+    "fresh:lint": "madrun fresh:lint",
+    "lint:fresh": "madrun lint:fresh",
     "test": "madrun test",
     "report": "madrun report",
     "coverage": "madrun coverage",
@@ -47,6 +42,7 @@
     "nodemon": "^2.0.3",
     "nyc": "^15.0.1",
     "putout": "^13.1.2",
-    "supertape": "^4.4.0"
+    "supertape": "^4.4.0",
+    "try-catch": "^3.0.0"
   }
 }
